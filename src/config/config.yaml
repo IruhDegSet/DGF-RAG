@@ -1,0 +1,25 @@
+data_source:
+  icecat:
+    username: Youcef-ITIM
+    password: "1452Dgf1452+"
+  csv: "../../data/processed/clean_data.csv"
+storage:
+  vector_db:
+    collection_name: "dgf_products"
+    cloud:
+      url: "https://2f04ca06-a3b2-41cc-92ab-2bc49c4d4561.europe-west3-0.gcp.cloud.qdrant.io:6333" 
+      api_key: "b-Mw4TsoamD4GWLEGo7tUNzzlwhgb4xm9lJsqKIzkEI5_t50k-CxIA"
+    local:
+      path: "../../data/local_vdb"
+  raw_data: "../../data/raw"
+  processed_data: "data/processed"
+models:
+  embeddings:
+    name: "intfloat/multilingual-e5-large"
+    api_key: "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"
+  llm:
+    name: "llama-3.1-70b-versatille"
+    api_key: "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"
+  
+
+  
