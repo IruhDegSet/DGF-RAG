@@ -5,21 +5,24 @@ data_source:
   csv: "../../data/processed/clean_data.csv"
 storage:
   vector_db:
+    type: "local"
     collection_name: "dgf_products"
     cloud:
+      type: "qdrant"
       url: "https://2f04ca06-a3b2-41cc-92ab-2bc49c4d4561.europe-west3-0.gcp.cloud.qdrant.io:6333" 
       api_key: "b-Mw4TsoamD4GWLEGo7tUNzzlwhgb4xm9lJsqKIzkEI5_t50k-CxIA"
     local:
+      type: "chroma"
       path: "../../data/local_vdb"
   raw_data: "../../data/raw"
   processed_data: "../../data/processed"
 models:
   embeddings:
-    type: "HF_API"
+    type: "hf_api"
     name: "intfloat/multilingual-e5-large"
     api_key: "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"
   llm:
-    type: "Groq"
+    type: "groq"
     name: "llama-3.1-70b-versatille"
     api_key: "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"
   
