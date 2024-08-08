@@ -1,11 +1,5 @@
 name: ci cd pipeline
-on:
-  pull_request:
-    branches: 
-      - main
-  push:
-    branches:
-      - main
+on: [push]
 jobs:
   tests:
     runs-on: ubuntu-latest
