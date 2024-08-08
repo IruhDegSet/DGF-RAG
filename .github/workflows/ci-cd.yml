@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-verion: ${{matrix.python-version}}
+          python-version: ${{matrix.python-version}}
       
       - name: Install Dependencies
         run: |
@@ -41,7 +41,6 @@ jobs:
       - name: Test App Code
         run: |
           pytest tests/test_ingest.py
-          pytest tests/test_process.py
           pytest tests/test_process.py
           pytest tests/test_indexer.py
           pytest tests/test_embeddings.py
