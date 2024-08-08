@@ -2,7 +2,7 @@ data_source:
   icecat:
     username: Youcef-ITIM
     password: "1452Dgf1452+"
-  csv: "../../data/processed/clean_data.csv"
+  csv: "data/processed/clean_data.csv"
 storage:
   vector_db:
     type: "local"
@@ -13,9 +13,9 @@ storage:
       api_key: "b-Mw4TsoamD4GWLEGo7tUNzzlwhgb4xm9lJsqKIzkEI5_t50k-CxIA"
     local:
       type: "chroma"
-      path: "../../data/local_vdb"
-  raw_data: "../../data/raw"
-  processed_data: "../../data/processed"
+      path: "data/local_vdb"
+  raw_data: "data/raw"
+  processed_data: "data/processed"
 models:
   embeddings:
     type: "hf_api"
