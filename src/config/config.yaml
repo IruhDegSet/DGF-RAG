@@ -9,8 +9,9 @@ storage:
     collection_name: "dgf_products"
     cloud:
       type: "qdrant"
-      url: "https://2f04ca06-a3b2-41cc-92ab-2bc49c4d4561.europe-west3-0.gcp.cloud.qdrant.io:6333" 
-      api_key: "b-Mw4TsoamD4GWLEGo7tUNzzlwhgb4xm9lJsqKIzkEI5_t50k-CxIA"
+      url: "https://a08399e1-9b23-417d-bc6a-88caa066bca4.us-east4-0.gcp.cloud.qdrant.io:6333" 
+      api_key: "lJo8SY8JQy7W0KftZqO3nw11gYCWIaJ0mmjcjQ9nFhzFiVamf3k6XA"
+      collection_name: "lvHP_collection"
     local:
       type: "chroma"
       path: "data/local_vdb"
